@@ -1,3 +1,8 @@
+/*
+ * Custom Sticky Pixel Javascript
+ */
+
+
 // jQuery to shrink the navbar on scroll
 $(window).scroll(function () {
     if ($('#spx-navbar').offset().top > 50) {

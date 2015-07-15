@@ -31,19 +31,19 @@ p {
 
 a {
     color: $brand-color;
-    border-bottom: 2px solid transparent;
+    border-bottom: $borders transparent;
 }
 
 a,
 button,
 img {
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 p a:hover,
 p a:focus,
 p a:active {
-    border-bottom: 2px solid $brand-color-highlighted;
+    border-bottom: $borders $brand-color-highlighted;
     text-decoration: none;
     color: $brand-color-highlighted;
     outline: 0;

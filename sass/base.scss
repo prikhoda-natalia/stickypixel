@@ -18,6 +18,7 @@ body {
 body {
     background-color: #000;
     -webkit-tap-highlight-color: rgba(255, 255, 255, .2);
+    position: relative;
 }
 
 
@@ -29,7 +30,7 @@ body {
 
 @media(min-width:992px) {
     .container-fluid {
-        padding-left: 1%;
+        padding-left: 2%;
         padding-right: 3%;
     }
 }
