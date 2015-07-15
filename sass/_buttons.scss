@@ -1,0 +1,54 @@
+/*------ Buttons ------*/
+
+.spx-btn {
+    color: $muted;
+    border: $borders $mid-trans;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 16px;
+}
+
+.spx-btn:hover,
+.spx-btn:focus,
+.spx-btn:active {
+    color: $main-text-color;
+    background-color: $brand-color;
+}
+
+.spx-btn-circle {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: 2px solid $main-text-color;
+    border-radius: 50px;
+    font-size: 30px;
+    color: $main-text-color;
+    line-height: 50px;
+}
+
+.spx-btn-circle:hover,
+.spx-btn-circle:focus,
+.spx-btn-circle:active {
+    color: $main-text-color;
+    background: $circle-hover-bgcolor;
+    border: 2px solid $main-text-color;
+}
+
+#spx-firstpage-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media(min-width:767px) {
+    .spx-btn-circle {
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        font-size: 40px;
+        line-height: 70px;
+    }
+}
+

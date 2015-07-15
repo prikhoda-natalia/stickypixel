@@ -1,0 +1,56 @@
+/*------ Layout ------*/
+
+.spx-outer-fullscreen {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.spx-inner-fullscreen {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section,
+header {
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.spx-with-bg {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+section {
+    padding: 100px 0;
+}
+
+#spx-intro {
+    background-image: url(/img/bg-macbook.jpg);
+}
+
+#spx-services {
+    background: none;
+}
+
+#spx-portfolio {
+    background-image: url(/img/bg-camera.jpg);
+}
+
+#spx-about {
+    background: none;
+}
+
+#spx-team {
+    background-image: url(/img/bg-imac.jpg);
+}
+
+#spx-contact {
+    background: none;
+}

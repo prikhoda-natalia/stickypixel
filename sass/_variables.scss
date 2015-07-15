@@ -1,0 +1,21 @@
+/*------ Colors ------*/
+$brand-color: #e96408;
+$brand-color-highlighted: #e88800;
+$hi-trans: rgba(255, 255, 255, .1);
+$mid-trans: rgba(255, 255, 255, .2);
+$lo-trans: rgba(255, 255, 255, .5);
+$muted: #bbb;
+
+/*------ Colored Elements ------*/
+$circle-hover-bgcolor: $mid-trans;
+$nav-border-bottom-colour: $mid-trans;
+$nav-hover-bgcolor: $mid-trans;
+$mob-nav-seperator: $hi-trans;
+
+/*------ Typography ------*/
+$main-text-color: #fff;
+$paragraph-font: Merriweather, Georgia, "Times New Roman", Times, serif;
+$headings-font: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/*------ Others ------*/
+$borders: 1px solid;
