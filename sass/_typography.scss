@@ -12,21 +12,23 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 24px;
     margin-bottom: 35px;
-    letter-spacing: 1px;
     font-weight: 700;
     text-transform: uppercase;
+    // Responsive Properties
+    font-size: 30px;
+    letter-spacing: 4px;
 }
 
 p {
     font-family: $paragraph-font;
-    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 35px;
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
+    // Responsive Properties
+    font-size: 20px;
 }
 
 a {
@@ -50,8 +52,14 @@ p a:active {
 }
 
 #spx-firstpage-heading {
-    font-size: 30px;
     margin-top: 75px;
+    // Responsive Properties
+    font-size: 80px;
+}
+
+#spx-subheading {
+    // Responsive Properties
+    font-size: 26px;
 }
 
 .spx-name {
@@ -68,24 +76,25 @@ p a:active {
 
 #spx-copyright p {
     color: $muted;
-    font-size: 12px;
+    // Responsive Properties
+    font-size: 14px;
 }
 
-@media(min-width:767px) {
+@media(max-width:767px) {
     h1, h2, h3, h4, h5, h6 {
-        font-size: 30px;
-        letter-spacing: 4px;
+        font-size: 24px;
+        letter-spacing: 1px;
     }
     p {
-        font-size: 20px;
+        font-size: 16px;
     }
     #spx-firstpage-heading {
-        font-size: 80px;
+        font-size: 30px;
     }
     #spx-subheading {
-        font-size: 26px;
+        font-size: 20px;
     }
     #spx-copyright p {
-        font-size: 14px;
+        font-size: 12px;
     }
 }

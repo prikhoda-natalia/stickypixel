@@ -1,4 +1,13 @@
-@import '../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss';
+@import 'bootstrap-sass-official/assets/stylesheets/_bootstrap.scss';
+
+/*------
+######
+
+Sticky Pixel Styles
+
+######
+------*/
+
 @import 'variables';
 @import 'typography';
 @import 'layout';
@@ -75,12 +84,5 @@ body {
         height: 44px;
         margin-top: 4px;
         margin-left: 10px;
-    }
-    ul.spx-social-buttons li {
-        display: block;
-        margin-bottom: 10px;
-    }
-    ul.spx-social-buttons li:last-child {
-        margin-bottom: 0px;
     }
 }

@@ -1,13 +1,22 @@
 /* Navbar */
 
 #spx-navbar {
-    margin-bottom: 0;
-    border-bottom: $borders $nav-border-bottom-colour;
+    border-top: none;
     text-transform: uppercase;
-    background-color: #000;
+    transition: all 0.5s ease-in-out;
     font-size: 14px;
     font-weight: 700;
-    transition: all 0.5s ease-in-out;
+    margin-bottom: 0;
+    // Responsive Properties
+    padding: 20px 0;
+    border-bottom: $borders transparent;
+    background-color: transparent;
+}
+
+#spx-navbar.spx-navbar-shrink {
+    padding: 0;
+    border-bottom: $borders $nav-border-bottom-colour;
+    background-color: #000;
 }
 
 #spx-navbar .navbar-collapse {
@@ -19,11 +28,12 @@
 }
 
 #spx-navbar .navbar-nav li a {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-top: $borders $mob-nav-seperator;
     color: $main-text-color;
     letter-spacing: 2px;
+    // Responsive Properties    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: none;
 }
 
 #spx-navbar .nav li a:focus,
@@ -45,6 +55,7 @@
     margin: 0px -15px;
 }
 
+
 @media(min-width:767px) and (max-width:992px) {
     #spx-navbar {
         font-size: 12px;
@@ -54,21 +65,15 @@
     }
 }
 
-@media(min-width:767px) {
+@media(max-width:767px) {
     #spx-navbar {
-        padding: 20px 0;
-        border-top: none;
-        border-bottom: $borders transparent;
-        background-color: transparent;
+        padding: 0;
+        border-bottom: $borders $nav-border-bottom-colour;
+        background-color: #000;
     }
     #spx-navbar .navbar-nav li a {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-top: none;
-    }
-    #spx-navbar.spx-navbar-shrink {
-        padding: 0;
-        background-color: #000;
-        border-bottom: $borders $nav-border-bottom-colour;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-top: $borders $mob-nav-seperator;
     }
 }

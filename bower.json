@@ -6,7 +6,7 @@
   ],
   "description": "Website for Sticky Pixel.",
   "main": [
-    "js/spx-custom.js",
+    "js/scripts.js",
     "sass/spx-custom.js"
   ],
   "license": "MIT",
@@ -20,5 +20,6 @@
     "jquery": "~2.1.4",
     "jquery.easing": "~1.3.1",
     "bootstrap-sass-official": "~3.3.5"
-  }
+  },
+  "devDependencies": {}
 }
