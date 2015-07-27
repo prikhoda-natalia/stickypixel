@@ -15,7 +15,7 @@ module.exports = function (grunt) {
     
     require('load-grunt-config')(grunt);
 
-    grunt.registerTask('dev', ['sass:dev', 'uncss:dev', 'cssnext:dev', 'concat:build', 'watch']);
+    grunt.registerTask('dev', ['sass:dev', 'uncss:dev', 'cssnext:dev', 'concat:dev', 'watch']);
     grunt.registerTask('build', ['string-replace:build', 'htmlmin:build', 'sass:build', 'uncss:build', 'cssnext:build', 'cssmin:build', 'uglify:build', 'concat:build']);
     grunt.registerTask('deploy', ['rsync']);
 };

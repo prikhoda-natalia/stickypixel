@@ -11785,10 +11785,15 @@ if (typeof jQuery === 'undefined') {
 
 // jQuery to shrink the navbar on scroll
 $(window).scroll(function () {
-    if ($('#spx-navbar').offset().top > 50) {
+    if ($('#spx-navbar').offset().top > 50 && $('#spx-navbar').offset().top < 100) {
         $('#spx-navbar').addClass('spx-navbar-shrink');
-    } else {
+        console.log('Count Add');
+    } else if ($('#spx-navbar').offset().top < 50) {
         $('#spx-navbar').removeClass('spx-navbar-shrink');
+        console.log('Count Remove');
+    }
+    else {
+        // Do nothing
     }
 });
 
