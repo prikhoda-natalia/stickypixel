@@ -49,3 +49,4 @@ bower_components
 # Others
 ######################
 .htaccess
+build
