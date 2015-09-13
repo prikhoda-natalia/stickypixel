@@ -1,8 +1,9 @@
 ---
-type: section
-order: 2
-id: services
 title: Services
+id: services
+type: home
+order: 2
+layout: landing-page
 ---
 
 ##Digital Design and Development

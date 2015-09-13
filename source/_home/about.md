@@ -1,9 +1,10 @@
 ---
-type: section
-order: 1
-id: about
-bg: /img/bg-macbook.jpg
 title: About Us
+id: about
+type: home
+order: 1
+layout: landing-page
+bg: /img/bg-macbook.jpg
 ---
 
 Sticky Pixel is a digital design agency relentless in the pursuit of creating beautiful, effortless experiences that drive the real-world growth of our clients’ businesses. We specialise in web design & development, front-end engineering and digital marketing activities from our base near Nice on the French&nbsp;Riviera.

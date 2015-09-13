@@ -1,9 +1,12 @@
 
-<footer id="{{ footer.id }}" class="fullscreen{% if footer.bg %} has-bg" style="background-image: url({{ footer.bg }})"{% else %}" {% endif %}>
+<footer id="contact" class="fullscreen" >
     <div class="fullscreen-inner">
         <div class="container">
-            <h1>{{ footer.title }}</h1>
-            {{ footer.content }}
+            <h1>Contact Us</h1>
+            {% include snippets/contact-form.html %}
+            {% include snippets/phone-email.html %}
+            {% include snippets/social-buttons.html %}
+            {% include snippets/legal.html %}
         </div>
     </div>
 </footer>

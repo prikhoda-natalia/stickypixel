@@ -7,8 +7,16 @@
     </label>
     <input type="checkbox" id="mobile-nav-check" />
     <div id="main-nav-list" class="nav-list-container">
+
+        {% if page.layout == "landing-page" %}
+        <ul class="nav-list">{% for link in site.landing_links %}
+            <li><a href="{{ link.url }}">{{ link.text }}</a></li>{% endfor %}
+        </ul>
+        {% else %}
         <ul class="nav-list">{% for link in page.links %}
             <li><a href="{{ link.url }}">{{ link.text }}</a></li>{% endfor %}
         </ul>
+        {% endif %}
+
     </div>
 </nav>

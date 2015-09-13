@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: front-page
+use_sitedesc: true
 links:
     -   url: "#about"
         text: About Us
@@ -10,18 +11,11 @@ links:
     -   url: "#contact"
         text: Contact Us
 ---
-
-{% assign sections = site.home | sort:"order" | where: "type", "section" %}
-{% assign footers = site.home | sort:"order" | where: "type", "footer" %}
-
-{% include home.html %}
-
+{% assign sections = site.home | sort:"order" | where: "type", "home" %}
+{% include front-page.html %}
 <main>
     {% for section in sections %}
         {% include section.html %}
     {% endfor %}
 </main>
-
-{% for footer in footers %}
-    {% include footer.html %}
-{% endfor %}
+{% include footer.html %}
