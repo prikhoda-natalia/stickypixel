@@ -1,0 +1,14 @@
+
+<nav id="main-nav" class="navbar">
+    {% include snippets/logo.html %}
+    <label for="mobile-nav-check" class="menu-toggle" aria-expanded="false" aria-controls="main-nav-list">
+        <span class="sr-only">Toggle mobile navigation</span>
+        <span class="menu-bars"><span>
+    </label>
+    <input type="checkbox" id="mobile-nav-check" />
+    <div id="main-nav-list" class="nav-list-container">
+        <ul class="nav-list">{% for link in page.links %}
+            <li><a href="{{ link.url }}">{{ link.text }}</a></li>{% endfor %}
+        </ul>
+    </div>
+</nav>

@@ -1,21 +1,13 @@
 module.exports = {
-    "options": {
-        "nonull": true
+    options: {
+        nonull: true
     },
 
-    "dev": {
-        "src": [
-            "<%= global.bowerJS %>",
-            "<%= global.customJS %>"
+    concat: {
+        src: [
+            "<%= global.bowerjs %>",
+            "<%= global.src %>/<%= global.js %>"
         ],
-        "dest": "<%= global.outputJS %>"
-    },
-
-    "build": {
-        "src": [
-            "<%= global.bowerMinJS %>",
-            "<%= uglify.build.dest %>"
-        ],
-        "dest": "<%= uglify.build.dest %>"
+        dest: "<%= global.build %>/<%= global.buildjs %>"
     }
 };

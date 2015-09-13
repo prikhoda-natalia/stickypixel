@@ -1,11 +1,8 @@
 module.exports = {
-    "dev": {
-        "src": "<%= uncss.dev.dest %>",
-        "dest": "<%= uncss.dev.dest %>"
-    },
-    
-    "build": {
-        "src": "<%= uncss.build.dest %>",
-        "dest": "<%= uncss.build.dest %>"
+
+    build: {
+        src: "<%= global.build %>/<%= global.css %>",
+        dest: "<%= global.build %>/<%= global.css %>"
     }
+
 };

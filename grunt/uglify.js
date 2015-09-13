@@ -1,8 +1,8 @@
 module.exports = {
-    
-    "build": {
-        "src": "<%= global.customJS %>",
-        "dest": "<%= global.buildPath %><%= global.outputMinJS %>"
+
+    build: {
+        src: "<%= global.build %>/<%= global.buildjs %>",
+        dest: "<%= global.build %>/<%= global.buildjs %>"
     }
 
 };

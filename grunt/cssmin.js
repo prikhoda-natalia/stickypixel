@@ -5,8 +5,8 @@ module.exports = {
         advanced: 0
     },
 
-    "build": {
-        "src": ["<%= cssnext.build.dest %>"],
-        "dest": "<%= cssnext.build.dest %>"
+    build: {
+        src: "<%= global.build %>/<%= global.css %>",
+        dest: "<%= global.build %>/<%= global.css %>"
     }
 };

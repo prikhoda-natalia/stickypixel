@@ -1,0 +1,94 @@
+/*------ Buttons ------*/
+
+button, a.button
+    font-size: 14px
+    color: $main-text-color
+    text-decoration: none
+    border-radius: 2px
+    display: inline-block
+    cursor: pointer
+    line-height: 2.5em
+    padding: 0 1.5em
+
+// .button-circle
+//     @extend button
+//     $circleSize: 1.5em
+//     border: $thickborder $main-text-color
+//     font-size: $xxlarge
+//     text-align: center
+//     width: $circleSize
+//     height: $circleSize
+//     line-height: $circleSize
+//     border-radius: $circleSize
+//     margin-top: 1em
+//     margin-bottom: 1em
+//     padding: 0
+//     &:hover,
+//     &:focus,
+//     &:active
+//         color: $main-text-color
+//         background: $circle-hover-bgcolor
+//         box-shadow: 0px 0px 2em 0px rgba(white, 0.8)
+
+.social-buttons a.button
+    color: $mutedDark
+    border: $thinborder $mid-trans
+    margin: 0 0.1em
+    text-transform: uppercase
+    font-weight: bold
+
+    &:hover,
+    &:focus,
+    &:active
+        color: $main-text-color
+        background-color: $brand-color
+        border-color: $hi-trans
+        [class^="icon-"],
+        [class*=" icon-"]
+            color: $main-text-color
+
+    [class^="icon-"],
+    [class*=" icon-"]
+        margin-left: 10px
+        font-size: 15px
+        color: $mutedDark
+
+    @media #{$btnsBreak}
+        display: block
+        margin: 0 auto 1em auto
+        width: 90%
+        max-width: 300px
+        &:last-child
+            margin-bottom: 0px
+
+input
+    @extend button
+    font-size: 14px
+    width: 90%
+    max-width: 300px
+    background-color: white
+    border-radius: 0
+    vertical-align: top
+    height: 40px
+    -webkit-appearance: none
+    -webkit-text-size-adjust: none
+    &[type="email"]
+        text-transform: inherit
+        color: $mutedDark
+        cursor: auto
+    &[type="submit"]
+        background-color: $brand-color
+        text-transform: uppercase
+        letter-spacing: 2px
+        &:hover,
+        &:focus,
+        &:active
+            background-color: $brand-color-highlighted
+
+    @media #{$mediumScreen}
+        display: block
+        margin: 0 auto
+        margin-bottom: 2px
+
+.form-contact
+    margin: 2em 0

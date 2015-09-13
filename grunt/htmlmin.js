@@ -1,11 +1,15 @@
 module.exports = {
 
-    "build": {
+    build: {
         options: {
             removeComments: true,
             collapseWhitespace: true
         },
-        "src": ["<%= global.buildPath %>index.html"],
-        "dest": "<%= global.buildPath %>index.html"
+        files: [{
+                expand: true,
+                cwd: "<%= global.build %>/",
+                src: "**/*.html",
+                dest: "<%= global.build %>/"
+            }]
     }
 };
