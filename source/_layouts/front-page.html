@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body>
-      {% include components/google-tag-manager.html %}
-      {% include components/nav.html %}
-      {{ content }}
-      {% include components/scripts.html %}
-  </body>
-</html>
+---
+layout: default
+---
+
+{% include front-page.html %}
+{{ content }}
+{% include footer.html %}

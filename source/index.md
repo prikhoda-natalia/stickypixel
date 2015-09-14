@@ -1,6 +1,14 @@
 ---
 layout: front-page
 use_sitedesc: true
+heading_pre: Ready to build your
+heading_post: beautiful website?
+sub_heading: You've come to the right&nbsp;place.
+buttons:
+    -   url: "#about"
+        text: Learn More &#x25BE;
+    -   url: "#contact"
+        text: Get in Touch
 links:
     -   url: "#about"
         text: About Us
@@ -12,10 +20,9 @@ links:
         text: Contact Us
 ---
 {% assign sections = site.home | sort:"order" | where: "type", "home" %}
-{% include front-page.html %}
+
 <main>
-    {% for section in sections %}
+    {% for page in sections %}
         {% include section.html %}
     {% endfor %}
 </main>
-{% include footer.html %}

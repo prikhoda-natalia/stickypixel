@@ -1,6 +1,7 @@
 ---
 title: Services
 id: services
+classes: detailed-section
 type: home
 order: 2
 layout: landing-page
@@ -14,11 +15,11 @@ Our core business is building the things you see; the look, feel and interaction
         <ul>
             <li>Web design and development (HTML, CSS, Javascript)</li>
             <li>Responsive development</li>
-            <li>Front-end engineering</li>
         </ul>
     </div>
     <div class="col-2">
         <ul>
+            <li>Front-end engineering</li>
             <li>User experience and interaction</li>
             <li>Ecommerce</li>
         </ul>
