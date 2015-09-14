@@ -1,5 +1,6 @@
 ---
 layout: single-section
+category: career
 id: front-end-developer
 classes: detailed-section
 heading_pre: Ready to build some

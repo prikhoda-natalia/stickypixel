@@ -7,6 +7,9 @@
             {% include snippets/phone-email.html %}
             {% include snippets/social-buttons.html %}
             {% include snippets/legal.html %}
+            {% unless page.category == "career" %}
+            {% include snippets/subscript.html %}
+            {% endunless %}
         </div>
     </div>
 </footer>
