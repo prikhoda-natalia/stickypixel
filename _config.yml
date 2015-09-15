@@ -34,8 +34,8 @@ company_no: 6849452
 markdown: kramdown
 source: source
 destination: build
-exclude: [sass, js]
-keep_files: [css, js]
+exclude: [sass, js, img]
+keep_files: [css, js, img]
 collections:
     home:
         output: true
