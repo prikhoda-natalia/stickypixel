@@ -27,7 +27,13 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
+    {% if page.use_sitedesc %}
+    <meta name="og:description" content="{{ site.description | truncate: 160 }}" />
+    {% elsif page.description %}
+    <meta name="og:description" content="{{ page.description | append: site.append_desc | truncate: 160 }}" />
+    {% else %}
+    <meta name="og:description" content="{{ page.content | strip_html | strip_newlines | prepend: ' - ' | prepend: page.title | truncate: 160 }}" />
+    {% endif %}
     <meta property="fb:admins" content="{{ site.fb_admins }}" />
     <meta property="fb:profile_id" content="{{ site.fb_profile_id }}" />
     <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}" />
