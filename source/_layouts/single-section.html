@@ -2,9 +2,4 @@
 layout: front-page
 ---
 
-<section id="{{ page.id }}" {% if page.classes %}class="{{ page.classes }}"{% endif %} {% if page.bg %}style="background-image: url({{ page.bg }})"{% endif %}>
-    <div class="container">
-        {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-        {{ content }}
-    </div>
-</section>
+{% include fullscreen-section.html %}

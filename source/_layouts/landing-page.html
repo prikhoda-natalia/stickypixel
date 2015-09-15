@@ -3,13 +3,6 @@ layout: default
 ---
 
 {% unless page.type == "contact" %}
-<section id="{{ page.id }}" class="fullscreen">
-    <div class="fullscreen-inner">
-        <div class="container">
-            <h1>{{ page.title }}</h1>
-            {{ content }}
-        </div>
-    </div>
-</section>
+{% include fullscreen-section.html %}
 {% endunless %}
 {% include footer.html %}
