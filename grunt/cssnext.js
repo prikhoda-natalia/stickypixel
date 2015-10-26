@@ -1,8 +1,7 @@
 module.exports = {
 
-    build: {
-        src: "<%= global.build %>/<%= global.css %>",
-        dest: "<%= global.build %>/<%= global.css %>"
+    cssnext: {
+        src: "<%= vars.css %>",
+        dest: "<%= vars.css %>"
     }
-
 };

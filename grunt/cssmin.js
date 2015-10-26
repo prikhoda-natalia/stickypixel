@@ -4,9 +4,8 @@ module.exports = {
         keepSpecialComments: 0,
         advanced: 0
     },
-
-    build: {
-        src: "<%= global.build %>/<%= global.css %>",
-        dest: "<%= global.build %>/<%= global.css %>"
+    cssmin: {
+        src: "<%= vars.css %>",
+        dest: "<%= vars.css %>"
     }
 };

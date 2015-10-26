@@ -1,8 +1,9 @@
 module.exports = {
-    deploy: {
+
+    rsync: {
         options: {
             recursive: true,
-            src: "build/",
+            src: "<%= vars.build %>/",
             dest: "~/www/stickypixel/",
             host: "stgsear1@akascia.com",
             delete: "true",

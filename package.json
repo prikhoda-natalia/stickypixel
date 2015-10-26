@@ -21,6 +21,8 @@
     "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-critical": "^0.1.7",
+    "grunt-criticalcss": "^0.6.0",
     "grunt-cssnext": "^1.0.0",
     "grunt-jekyll": "^0.4.2",
     "grunt-rsync": "^0.6.2",

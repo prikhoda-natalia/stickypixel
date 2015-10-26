@@ -1,32 +1,21 @@
 module.exports = {
-
+    
+    options: {
+        server: {
+            baseDir: "<%= vars.build %>"
+        },
+        notify: false
+    },
     dev: {
         options: {
-            server: {
-                baseDir: "<%= global.build %>/"
-            },
-            watchTask: true,
-            notify: false
+            watchTask: true
         },
-        src: [
-            "<%= global.build %>/<%= global.css %>",
-            "<%= global.build %>/<%= global.buildjs %>",
-            "<%= global.build %>/**/*.html"
-        ]
+        src: "<%= vars.bswatch %>"
     },
     build: {
         options: {
-            server: {
-                baseDir: "<%= global.build %>/"
-            },
-            watchTask: false,
-            notify: false
+            watchTask: false
         },
-        src: [
-            "<%= global.build %>/<%= global.css %>",
-            "<%= global.build %>/<%= global.buildjs %>",
-            "<%= global.build %>/**/*.html"
-        ]
+        src: "<%= vars.bswatch %>"
     }
-
 };

@@ -1,16 +1,15 @@
 module.exports = {
 
     css: {
-        files: ["<%= global.src %>/sass/**/*.sass"],
-        tasks: ["sass"]
+        files: "<%= vars.src %>/sass/**/*.sass",
+        tasks: "sass"
     },
     js: {
-        files: ["<%= global.src %>/js/**/*.js"],
-        tasks: ["concat"]
+        files: "<%= vars.js %>",
+        tasks: "concat"
     },
     jekyll: {
-        files: ["<%= global.src %>/**/*.html", "<%= global.src %>/**/*.md"],
-        tasks: ["jekyll"]
+        files: ["<%= vars.src %>/**/*.html", "<%= vars.src %>/**/*.md"],
+        tasks: "jekyll"
     }
-
 };

@@ -24,11 +24,6 @@ var StickyPixel = {
     },
 
     shrinkMainNav: function() {
-        // if (cache.$mainNav.offset().top > 50 && cache.$mainNav.offset().top < 100) {
-        //     cache.$mainNav.addClass('navbar-shrink');
-        // } else if (cache.$mainNav.offset().top < 50) {
-        //     cache.$mainNav.removeClass('navbar-shrink');
-        // }
         if (cache.$mainNav.offset().top > 50) {
             cache.$mainNav.addClass('navbar-shrink');
         } else if (cache.$mainNav.offset().top <= 50) {

@@ -1,8 +1,9 @@
 module.exports = {
-    files: {
+
+    imagemin: {
         expand: true,
-        cwd: "<%= global.build %>/img",
-        src: "**/*.{png,jpg,gif,ico}",
-        dest: "<%= global.build %>/img"
+        cwd: "<%= vars.src %>/img",
+        src: "**/*.{png,jpg,gif,ico,svg}",
+        dest: "<%= vars.build %>/img"
     }
 };

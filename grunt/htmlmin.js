@@ -1,15 +1,15 @@
 module.exports = {
 
-    build: {
+    htmlmin: {
         options: {
             removeComments: true,
             collapseWhitespace: true
         },
         files: [{
-                expand: true,
-                cwd: "<%= global.build %>/",
-                src: "**/*.html",
-                dest: "<%= global.build %>/"
-            }]
+            expand: true,
+            cwd: "<%= vars.build %>/",
+            src: "**/*.html",
+            dest: "<%= vars.build %>/"
+        }]
     }
 };

@@ -59,9 +59,15 @@
     @media #{$navBreak}
         padding: 0
 
+        .logo
+            margin: 6px 10px
+
         &.navbar-shrink
             border-bottom: $thinborder $nav-border-bottom-colour
             background-color: $nav-bar-color
+
+            .logo
+                margin: 6px 10px
 
         .nav-list-container
             float: none
@@ -78,9 +84,6 @@
                 border-top: $thinborder $mob-nav-seperator
                 margin: 0
                 padding: 1em 1em
-
-        .logo
-            margin: 6px 10px
 
         .menu-toggle
             display: block

@@ -44,11 +44,11 @@
     <!-- Google+ Stuff -->
     <link rel="publisher" href="https://plus.google.com/{{ site.google_plus }}" />
 
-    <!-- CSS Files -->
-    <link href="/css/styles.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <!-- Critical CSS Files and Custom Fonts -->
+    <style type="text/css">
+        {% include critical.css %}
+    </style>
+    {% include criticalcss.html %}
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
