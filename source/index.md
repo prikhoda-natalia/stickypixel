@@ -16,6 +16,8 @@ links:
         text: Services
     -   url: "#team"
         text: Our Team
+    -   url: "articles/free-fridays.html"
+        text: Free Fridays
     -   url: "#contact"
         text: Contact Us
 ---

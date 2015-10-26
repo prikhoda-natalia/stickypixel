@@ -8,7 +8,7 @@ layout: landing-page
 ---
 
 ##Digital Design and Development
-Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and only ever as a progressive enchancement. And naturally, all our sites look delicious on all devices.
+Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
 
 <div class="cleared">
     <div class="col-2">

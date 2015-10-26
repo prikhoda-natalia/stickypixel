@@ -11,6 +11,8 @@
     .nav-list-container
         float: right
         margin-right: 0.5em
+        transition: all 0.1s ease-in-out
+        /* Transition hiding the menu */
 
     li
         float: left
@@ -30,12 +32,13 @@
             color: $main-text-color
             letter-spacing: 2px
             text-decoration: none
+
             &:hover,
-            .active
+            &.active
                 background-color: $nav-hover-bgcolor
 
             @media #{$navBreakToLarge}
-                font-size: 13px
+                font-size: $xxsmall
 
     .menu-toggle
         display: none
@@ -43,27 +46,26 @@
     .logo
         display: inline-block
         height: 40px
-        width: 138px
         margin: 10px 10px
 
     &.navbar-shrink
-        @media #{$aboveNavBreak}
-            border-bottom: $thinborder $nav-border-bottom-colour
-            background-color: $nav-bar-color
-            .nav-list-container a
-                margin: 0
-            .logo
-                margin: 3px 10px
+        border-bottom: $thinborder $nav-border-bottom-colour
+        background-color: $nav-bar-color
+        .nav-list-container a
+            margin: 0
+        .logo
+            margin: 3px 10px
 
     @media #{$navBreak}
         padding: 0
+
         &.navbar-shrink
             border-bottom: $thinborder $nav-border-bottom-colour
             background-color: $nav-bar-color
-            transition: all 0.2s ease-in-out
 
         .nav-list-container
             float: none
+            width: 100%
             max-height: 0px
             overflow: scroll
             background-color: #000
@@ -108,3 +110,4 @@ input#mobile-nav-check
         &:checked + .nav-list-container
             max-height: 400px
             transition: all 0.2s ease-in-out
+            /* Transition displaying the menu */

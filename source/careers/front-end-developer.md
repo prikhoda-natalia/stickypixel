@@ -27,7 +27,7 @@ Due to high demand, we are seeking a web designer / front-end developer, initial
 * Keen eye for detail
 * Talent to quickly understand complex client requirements and suggest simple, logical solutions
 * Desire for doing things right
-* Ability to translate client requirements to help our designers produce outstanding work
+* Ability to translate client requirements in to scope and specification documents
 
 ##Good to Have
 * Knowledge of javascript frameworks such as jQuery, Angular, Backbone etc.

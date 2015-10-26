@@ -3,8 +3,6 @@ $brand-color: #e96408
 $brand-color-highlighted: lighten($brand-color, 10%)
 $brand-color-bright: #ffbc05
 $brand-color-darkened: darken($brand-color, 10%)
-// $brand-color-darkened: #943D27
-// $brand-color-darkened: #C16234
 $hi-trans: rgba(255, 255, 255, .1)
 $mid-trans: rgba(255, 255, 255, .2)
 $lo-trans: rgba(255, 255, 255, .5)
@@ -20,7 +18,6 @@ $mob-nav-seperator: $hi-trans
 
 //------ Typography ------
 $main-text-color: #fff
-// $paragraph-font: Merriweather, Georgia, "Times New Roman", Times, serif
 $paragraph-font: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif
 $headings-font: $paragraph-font
 
@@ -33,11 +30,14 @@ $largeScreen: "screen and (min-width: 1024px)"
 $mediumScreen: "screen and (max-width: 640px)"
 $smallScreen: "screen and (max-width: 380px)"
 
-$navBreakToLarge: "screen and (min-width: 661px) and (max-width: 780px)"
-$aboveNavBreak: "screen and (min-width: 661px)"
-$navBreak: "screen and (max-width: 660px)"
-
+//------ Media Queries ------
+$navBreakToLarge: "screen and (min-width: 781px) and (max-width: 940px)"
+/* Reduces the font-size of the nav links between the navbar turning mobile and */
+/* fitting the full text size - just allows a bit more room for the full width navbar at smaller screen sizes */
+$navBreak: "screen and (max-width: 780px)"
+/* This break controls when the nav bar changes to the mobile version, only when the nav linkgs crash into the logo */
 $btnsBreak: "screen and (max-width: 750px)"
+/* This break controls when the buttons start to stack */
 
 %clearfix
     &:after
@@ -54,3 +54,4 @@ $large: 1.250em // 25
 $normal: 1em // 20
 $small: 0.8em // 16
 $xsmall: 0.7em // 14
+$xxsmall: 0.65em // 13
