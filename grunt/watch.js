@@ -1,5 +1,7 @@
 module.exports = {
-
+    options:{
+        spawn: false
+    },
     css: {
         files: "<%= vars.src %>/sass/**/*.sass",
         tasks: "sass"
