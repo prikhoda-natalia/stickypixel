@@ -1,16 +1,15 @@
-
-<footer id="contact" class="fullscreen" >
-    <div class="fullscreen-inner">
-        <div class="container">
-            <h1>Contact Us</h1>
-            <p>Looking for <a href="/articles/free-fridays.html">Free Fridays?</a></p>
-            {% include snippets/contact-form.html %}
-            {% include snippets/phone-email.html %}
-            {% include snippets/social-buttons.html %}
-            {% include snippets/legal.html %}
-            {% unless page.category == "career" %}
-            {% include snippets/subscript.html %}
-            {% endunless %}
-        </div>
+<footer id="contact" class="fullscreen">
+  <div class="fullscreen-inner">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Looking for <a href="/articles/free-fridays.html">Free Fridays?</a></p>
+      {% include snippets/contact-form.html %}
+      {% include snippets/phone-email.html %}
+      {% include snippets/social-buttons.html %}
+      {% include snippets/legal.html %}
+      {% unless page.category == "career" %}
+      {% include snippets/subscript.html %}
+      {% endunless %}
     </div>
+  </div>
 </footer>

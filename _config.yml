@@ -8,7 +8,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://www.stickypixel.com
 author: Chris Sargent
 keywords: web design development agency html css graphic design seo inbound marketing france 06 riviera antibes nice juan-les-pins monaco cannes alpes-maritimes english speaking
-bing_verify: 0E6D67E6271DE2A5016E06399A4A2D8E
 pinterest_verify: 185745922478d5e2f01bedcb16a93d11
 twitter_username: Chris5argent
 github_username:  ChrisSargent
@@ -37,19 +36,19 @@ destination: build
 exclude: [sass, js, img]
 keep_files: [css, js, img]
 collections:
-    home:
-        output: true
-    team:
-        output: true
+  home:
+    output: true
+  team:
+    output: true
 
 landing_links:
-    -   url: "/index.html"
-        text: Home
-    -   url: "/index.html#about"
-        text: About Us
-    -   url: "/index.html#services"
-        text: Services
-    -   url: "/index.html#team"
-        text: Our Team
-    -   url: "/index.html#contact"
-        text: Contact Us
+  -   url: "/index.html"
+    text: Home
+  -   url: "/index.html#about"
+    text: About Us
+  -   url: "/index.html#services"
+    text: Services
+  -   url: "/index.html#team"
+    text: Our Team
+  -   url: "/index.html#contact"
+    text: Contact Us

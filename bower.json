@@ -1,23 +1,23 @@
 {
-  "name": "StickyPixel",
-  "version": "1.0.0",
-  "authors": [
-    "Chris Sargent <chris@stickypixel.com>"
-  ],
-  "description": "Website for Sticky Pixel.",
-  "main": [
-    "js/scripts.js",
-    "sass/spx-custom.js"
-  ],
-  "license": "MIT",
-  "homepage": "www.stickypixel.com",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components"
-  ],
-  "dependencies": {
-    "jquery": "~2.1.4"
-  },
-  "devDependencies": {}
+    "name": "StickyPixel",
+    "version": "1.0.0",
+    "authors": [
+        "Chris Sargent <chris@stickypixel.com>"
+    ],
+    "description": "Website for Sticky Pixel.",
+    "main": [
+        "js/scripts.js",
+        "sass/spx-custom.js"
+    ],
+    "license": "MIT",
+    "homepage": "www.stickypixel.com",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "jquery": "~2.1.4"
+    },
+    "devDependencies": {}
 }

@@ -1,7 +1,7 @@
 module.exports = {
 
-    uglify: {
-        src: "<%= vars.buildjs %>",
-        dest: "<%= vars.buildjs %>"
-    }
+	uglify: {
+		src: "<%= vars.buildjs %>",
+		dest: "<%= vars.buildjs %>"
+	}
 };
